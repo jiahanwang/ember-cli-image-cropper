@@ -1,0 +1,1 @@
+export { default } from 'ember-cli-image-cropper/components/image-cropper';
