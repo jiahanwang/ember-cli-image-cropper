@@ -1,0 +1,14 @@
+<h1>Demos for ember-cli-image-cropper</h1>
+
+<h2>Simple Demo</h2>
+
+{{#image-cropper 
+	aspectRation=1 
+	onCropped='setCroppedImage'
+	url='627x627.jpg'
+}}
+{{/image-cropper}}
+
+<img src="{{croppedImage}}"/>
+
+

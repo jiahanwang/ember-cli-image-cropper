@@ -1,1 +1,25 @@
-{{yield}}
+<h3>{{errorMessage}}</h3>
+
+{{#if hasImageData}}
+    <img class='cropper-target' src='{{imageData}}'/>
+{{/if}}
+
+
+<button {{action 'setDragMode' 'move'}}>Move Mode</button>
+<button {{action 'setDragMode' 'crop'}}>Crop Mode</button>
+
+
+<button {{action 'zoom' true}}>Zoom In</button>
+<button {{action 'zoom' false}}>Zoom Out</button>
+
+<button {{action 'rotate' false}}>Rotate Back</button>
+<button {{action 'rotate' true}}>Rotate</button>
+
+<button {{action 'flip' true}}>Reverse back</button>
+<button {{action 'flip' false}}>Reverse</button>
+
+<span class='{{if isWidthUndersized 'error'}}'>{{_croppedWidth}}</span>
+<span class='{{if isHeightUndersized 'error'}}'>{{_croppedHeight}}</span>
+
+<button {{action 'getCroppedImageData'}}>Get cropped data</button>
+

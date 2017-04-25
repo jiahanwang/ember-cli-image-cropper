@@ -1,0 +1,11 @@
+.image-cropper{
+	height: 500px;
+
+	img {
+		max-width: 100%;
+	}
+
+	span.error {
+		background-color: red;
+	}
+}
